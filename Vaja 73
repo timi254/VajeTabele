@@ -1,0 +1,77 @@
+import java.util.Scanner;
+public class Naloga73{
+    public static void main(String[] args) {
+        Scanner vhod= new Scanner(System.in);
+        int []tab=new int[10];
+        for(int i = 0;i<tab.length;i++)
+        {
+            tab[i]=vhod.nextInt();
+        }
+        for(int i = 0; i<tab.length;i++)
+        {
+            System.out.printf("%4d",tab[i]);
+        }
+        System.out.println();
+        for(int i = 0; i<tab.length;i++)
+        {
+            if(tab[i]%2==0)
+            {
+            System.out.printf("%4d",tab[i]);
+            }
+            else
+            {
+                System.out.printf("-  ");
+            }
+        }
+        System.out.println();
+        for(int i = 0; i<tab.length;i++)
+        {
+            if(tab[i]%2!=0)
+            {
+            System.out.printf("%4d",tab[i]);
+            }
+            else
+            {
+                System.out.printf("-  ");
+            }
+        }
+        System.out.println();
+        for(int i = 0; i<tab.length;i++)
+        {
+            if(i%2!=0)
+            {
+            System.out.printf("%4d",tab[i]);
+            }
+            else
+            {
+                System.out.printf("-  ");
+            }
+        }
+        System.out.println();
+        for(int i = 0; i<tab.length;i++)
+        {
+            if(i%2==0)
+            {
+            System.out.printf("%4d",tab[i]);
+            }
+            else
+            {
+                System.out.printf("-  ");
+            }
+        }
+        System.out.println();
+        for(int i = 0; i<tab.length;i++)
+        {
+            if(tab[i]<30)
+            {
+            System.out.printf("%4d",tab[i]);
+            }
+            else
+            {
+                System.out.printf("-  ");
+            }
+        }
+
+
+    }
+}

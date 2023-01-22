@@ -1,0 +1,40 @@
+import java.util.Random;
+public class Naloga74 {
+    public static void main(String[] args) {
+        int []tab=new int[10];
+        int vs=0;
+        int vs1=0;
+        int vs2=0;
+        for(int i = 0;i<tab.length;i++)
+        {
+            tab[i]=(int)((Math.random()*(200-100))+100);
+        }
+        for(int i = 0; i<tab.length;i++)
+        {
+            System.out.printf("%4d",tab[i]);
+        }
+        for(int i = 0; i<tab.length;i++)
+        {
+            if(tab[i]>150)
+            {
+                vs++;
+            }
+        }
+        for(int i = 0; i<tab.length;i++)
+        {
+            vs1=vs1+tab[i];
+        }
+        System.out.println();
+        for(int i = 0; i<tab.length;i++)
+        {
+            if(tab[i]%3==0 || tab[i]%4==0)
+            {
+                vs2++;
+            }
+        }
+        System.out.println(vs);
+        System.out.println(vs1);
+        System.out.println(vs2);
+
+    }
+}

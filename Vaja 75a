@@ -1,0 +1,33 @@
+import java.util.Random;
+public class Naloga75a {
+    public static void main(String[] args) {
+        char[] tab=new char[10];
+        for(int i=0;i<tab.length;i++)
+        {
+            tab[i]=(char)(Math.random()*(26)+'a');
+        }
+        for(int i=0;i<tab.length;i++)
+        {
+            System.out.print(tab[i]+" ");
+        }
+        System.out.println();
+
+        for(int i=0;i<tab.length;i++)
+        {
+            if(i%2==0)
+            {
+                System.out.print(tab[i]+" ");
+            }
+        }
+        System.out.println();
+
+        for(int i=0;i<tab.length;i++)
+        {
+            if(tab[i]=='a' || tab[i]=='e' || tab[i]=='i' || tab[i]=='o' || tab[i]=='u')
+            {
+                System.out.print(tab[i]+" ");
+            }
+        }
+
+    }
+}
